@@ -5,10 +5,6 @@ import Category from '@pages/Category'
 
 const routes = [
     {
-        path: '*',
-        element: <NotFoundPage />
-    },
-    {
         path: '/',
         element: <Home />
     },
@@ -19,7 +15,11 @@ const routes = [
     {
         path: '/category/:category',
         element: <Category />
-    }
+    },
+    {
+        path: '*',
+        element: <NotFoundPage />
+    },
 ];
 
 
