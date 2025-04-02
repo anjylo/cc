@@ -1,0 +1,16 @@
+.env
+.vscode
+.dockerignore
+.git
+.gitignore
+config
+**/node_modules
+**/npm-debug.log
+builder
+docker-compose.dev.yml
+docker-compose.prod.yml
+Dockerfile
+Dockerfile.dev
+Dockerfile.prod
+Makefile
+README.md
