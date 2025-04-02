@@ -12,7 +12,7 @@ import './index.css';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
-      <Routes>  {/* Define your Routes here */}
+      <Routes basename='/cc'>  {/* Define your Routes here */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/category/:category" element={<Category />} />
