@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "cc",
   "private": true,
-  "homepage": "https://anjylo.github.io/cc/",
+  "homepage": "https://anjylo.github.io/cc",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

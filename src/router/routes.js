@@ -1,3 +1,4 @@
+// router/routes.js
 import NotFoundPage from '@pages/NotFoundPage'
 import Home from '@pages/Home'
 import About from '@pages/About'
@@ -21,6 +22,5 @@ const routes = [
         element: <NotFoundPage />
     },
 ];
-
 
 export default routes;
