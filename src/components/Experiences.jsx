@@ -45,7 +45,7 @@ const Experiences = () => {
         <p className="text-white uppercase mb-4" id='about'>about</p>
 
         <div className="flex flex-col gap-4 md:gap-0 md:flex-row md:justify-between mb-12">
-          <h1 className="text-custom-beige uppercase text-6xl font-extrabold flex-6">my <br /> Experience</h1>
+          <h1 className="text-custom-beige uppercase text-5xl lg:text-6xl font-extrabold flex-6">my <br /> Experience</h1>
           
           <div className="flex flex-col gap-4 flex-4">
 

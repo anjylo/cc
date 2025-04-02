@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4 md:flex-row md:justify-between">
           <div className="flex flex-col gap-2">
             <p className="uppercase font-semibold" id='contact'>contact</p>
-            <h1 className="text-4xl font-semibold">hello@maryprincessdesigns.com</h1>
+            <h1 className="text-xl lg:text-4xl font-semibold">hello@maryprincessdesigns.com</h1>
           </div>
           <div>
             <p className="uppercase font-semibold">social media</p>

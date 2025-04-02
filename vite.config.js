@@ -14,11 +14,11 @@ export default defineConfig(({ mode }) => {
       react(),
       tailwindcss(),
     ],
-    // server: {
-    //   host: env.VITE_APP_HOST,
-    //   port: env.VITE_APP_PORT,
-    //   strictPort: true,
-    // },
+    server: {
+      host: env.VITE_APP_HOST,
+      port: env.VITE_APP_PORT,
+      strictPort: true,
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
