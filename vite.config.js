@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
 
   return {
-    publicPath : '',
+    base: 'cc',
     plugins: [
       react(),
       tailwindcss(),
