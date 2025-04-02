@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
 
   return {
-    base: '/cc',
+    base: '/cc/',
     plugins: [
       react(),
       tailwindcss(),
@@ -22,7 +22,6 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
-        '@router': path.resolve(__dirname, 'src/router'),
         '@pages': path.resolve(__dirname, 'src/pages'),
         '@components': path.resolve(__dirname, 'src/components'),
       }
@@ -31,23 +30,6 @@ export default defineConfig(({ mode }) => {
       loader: "jsx",
       include: /src\/.*\.jsx?$/,
       exclude: [],
-    },
-    optimizeDeps: {
-      esbuildOptions: {
-        plugins: [
-          {
-            name: "load-js-files-as-jsx",
-            setup(build) {
-              build.onLoad({ filter: /src\/.*\.js$/ }, async (args) => {
-                return {
-                  loader: "jsx",
-                  contents: await fs.readFile(args.path, "utf8"),
-                };
-              });
-            },
-          },
-        ],
-      },
     },
   }
 })
